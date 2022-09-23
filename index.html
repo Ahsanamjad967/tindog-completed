@@ -14,136 +14,191 @@
   <style>
     /* title */
 
-#title {
-background-color: #ff4c68;
+/* title */
 
+
+#title {
+    background-color: #ff4c68;
+    padding-bottom: 10%;
 }
 
 .container-fluid {
-padding: 3% 15%;
+    padding: 3% 15%;
 }
 
 h1 {
-font-family: 'Montserrat', sans-serif;
-font-weight: 700;
-font-size: 3rem;
-line-height: 1.5;
-color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 1.5;
+    color: white;
 
 
 }
 
 .nav-item {
-padding: 0 16px 0;
-font-family: 'Ubuntu', sans-serif;
+    padding: 0 16px 0;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .navbar {
-padding-left: 0;
-padding-bottom: 5rem;
+    padding-left: 0;
+    padding-bottom: 5rem;
 }
 
 .navbar-brand {
-font-family: 'Ubuntu', sans-serif;
-font-weight: 400;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
 
-font-size: 3rem;
+    font-size: 3rem;
 }
-
 
 
 .download-button {
-margin: 4% 3% 3% 0%;
+    margin: 4% 3% 8% 0%;
 }
 
-.iphone {
-width: 60%;
-transform: rotate(25deg);
+.iphone{
+    width: 60%;
+    transform: rotate(25deg);
+
+    position: absolute;
+    z-index: 0;
 
 
 }
 
 
 /*features */
+#features {
+    text-align: center;
+    padding: 8% 15%;
+    background-color: white;
+    position: relative;
+    z-index: 1;
+}
+
+
 .icons {
-color: #ea8172;
-
-
+    color: #ea8172;
 }
 
 .icons:hover {
-color: #ff4c68;
-;
+    color: #ff4c68;
 }
 
-#features {
-text-align: center;
-}
-
-.feature-boxes h3 {
-font-family: 'Montserrat', sans-serif;
-
-
-font-weight: 700;
-}
-
-#features {
-padding: 7% 15%;
-
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
 }
 
 .feature-boxes {
+    padding: 4% 0%;
+}
 
-padding: 4% 0%;
+p {
+    color: #8f8f8f;
+    font-family: 'Montserrat', sans-serif;
+    
 }
 
 .feature-boxes p {
-
-width: 50%;
-margin: 0 auto;
-color: #8f8f8f;
+    width: 50%;
+    margin: 0 auto;
 }
 
 /*testimonials */
 
 #testimonials {
 
-background-color: #ea8172;
-text-align: center;
-color: white;
+    background-color: #ea8172;
+    text-align: center;
+    color: white;
 
 }
 
 h2 {
-font-family: 'Montserrat', sans-serif;
-font-size: 3rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
 }
 
 #testimonials em {
-font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 #testimonials img {
-border-radius: 100%;
-width: 10%;
-margin-right: 10px;
+    border-radius: 100%;
+    width: 10%;
+    margin-right: 10px;
 }
 
 /*press */
 
 #press {
-background-color: #ea8172;
-padding-bottom: 3%;
-text-align: center;
+    background-color: #ea8172;
+    padding-bottom: 3%;
+    text-align: center;
 }
 
 #press img {
-width: 15%;
-margin: 1% 2% 1%;
+    width: 15%;
+    margin: 1% 2% 1%;
 }
-.carousel-item{
-padding: 4% 15% 7%;
+
+.carousel-item {
+    padding: 4% 15% 7%;
 }
+
+/* pricing */
+.cards {
+    padding: 2% 3%;
+}
+
+#pricing {
+    padding: 7%;
+    text-align: center;
+}
+@media (max-width:991px)
+{
+    #title{
+text-align: center;
+    }
+
+    .iphone{
+transform: rotate(0);
+position: static;
+    }
+} 
+
+#cta{
+    background-color: #ff4c68;
+    text-align: center;
+    padding:7% 15%;
+
+}
+.cta-buttons{
+    margin: 4% 1%;
+    
+    
+}
+
+#cta h3{
+    font-size: 3.5rem;
+    color:white;
+    font-weight: 900;
+}
+#footer p{
+    font-weight: 500;
+}
+#footer{
+    background-color: white;
+    text-align: center;
+    padding:7% 15%;
+}
+.footer-icons{
+    margin: 2% 1%;
+} 
 </style>
   
   <script src="https://kit.fontawesome.com/bbe1f470d9.js" crossorigin="anonymous"></script>
@@ -274,31 +329,61 @@ padding: 4% 15% 7%;
 
     <h2>A Plan for Every Dog's Needs</h2>
     <p>Simple and affordable price plans for your and your dog.</p>
+    
+      <div class="row">
+        <div class="cards col-lg-4 col-md-6">
+          <div class="card ">
+            <div class="card-header">
+              <h3>Chihuahua</h3>
+            </div>
+            <div class="card-body">
+              <h2>Free</h2>
+              <p>5 Matches Per Day</p>
+              <p>10 Messages Per Day</p>
+              <p>Unlimited App Usage</p>
+              <button class="btn btn-outline-dark btn-block btn-lrg" type="button">Sign Up</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="cards col-lg-4 col-md-6">
+          <div class="card ">
+            <div class="card-header">
+              <h3>Labrador</h3>
+            </div>
+            <div class="card-body">
+
+              <h2>$49 / mo</h2>
+              <p>Unlimited Matches</p>
+              <p>Unlimited Messages</p>
+              <p>Unlimited App Usage</p>
+              <button class="btn btn-dark btn-block btn-lrg" type="button">Sign Up</button>
+            </div>
+          </div>
+        </div>
+        <div class="cards col-lg-4">
+          <div class="card ">
+            <div class="card-header">
+              <h3>Mastiff</h3>
+            </div>
+            <div class="card-body">
+              <h2>$99 / mo</h2>
+              <p>Pirority Listing</p>
+              <p>Unlimited Matches</p>
+              <p>Unlimited Messages</p>
+              <p>Unlimited App Usage</p>
+              <button class="btn btn-dark btn-block btn-lrg" type="button">Sign Up</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    
 
 
-    <h3>Chihuahua</h3>
-    <h2>Free</h2>
-    <p>5 Matches Per Day</p>
-    <p>10 Messages Per Day</p>
-    <p>Unlimited App Usage</p>
-    <button type="button">Sign Up</button>
 
 
-    <h3>Labrador</h3>
-    <h2>$49 / mo</h2>
-    <p>Unlimited Matches</p>
-    <p>Unlimited Messages</p>
-    <p>Unlimited App Usage</p>
-    <button type="button">Sign Up</button>
-
-
-    <h3>Mastiff</h3>
-    <h2>$99 / mo</h2>
-    <p>Pirority Listing</p>
-    <p>Unlimited Matches</p>
-    <p>Unlimited Messages</p>
-    <p>Unlimited App Usage</p>
-    <button type="button">Sign Up</button>
 
   </section>
 
@@ -308,8 +393,11 @@ padding: 4% 15% 7%;
   <section id="cta">
 
     <h3>Find the True Love of Your Dog's Life Today.</h3>
-    <button type="button">Download</button>
-    <button type="button">Download</button>
+    <button type="button" class="btn btn-dark btn-lg cta-buttons "><i class="fa-brands fa-apple "></i>
+      Download</button>
+    <button type="button" class="btn btn-outline-light btn-lg cta-buttons"><i
+        class="fa-brands fa-google-play"></i>
+      Get It On Playstore</button>
 
   </section>
 
@@ -317,7 +405,10 @@ padding: 4% 15% 7%;
   <!-- Footer -->
 
   <footer id="footer">
-
+    <i class="fa-brands fa-facebook footer-icons"></i>
+    <i class="fa-brands fa-twitter footer-icons" ></i>
+    <i class="fa-brands fa-instagram footer-icons"></i>
+    <i class="fa-solid fa-envelope footer-icons"></i>
     <p>© Copyright TinDog</p>
 
   </footer>
